@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnPulsa.setOnClickListener {
             val cateto0 = binding.etCateto0.text.toString().toDouble()
             val cateto1 = binding.etCateto1.text.toString().toDouble()
-            val resultado = sqrt(cateto0*cateto0 + cateto1*cateto1)
+            val resultado = sqrt((cateto0*cateto0 + cateto1*cateto1))
+            binding.tvResultado.text = resultado.toString()
         }
 
 
